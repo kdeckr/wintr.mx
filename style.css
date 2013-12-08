@@ -78,6 +78,7 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center top;
+	background-attachment: fixed;
 }
 
 header {
@@ -206,7 +207,7 @@ nav {
 	}
 
 #footer {
-	background:rgba(0,0,0,0.6);
+	background:rgba(0,0,0,0.3);
 	width:100%;
 	text-align:center;
 	padding:2em;
@@ -246,7 +247,7 @@ nav {
 		background-color: #37BCAF;
 		background-image: url(http://wintermix.kyledecker.me/2011/bg-top.jpg);
 	}
-		#y-2011 header { font-family: 'Lato'; font-weight:100; }
+		#y-2011 header { font-family: 'Quicksand'; font-weight:300; }
 		#y-2011 nav ul li.prev a,
 		#y-2011 nav ul li.next a { color: #19786F; }
 
