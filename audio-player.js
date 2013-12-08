@@ -118,30 +118,6 @@ $('#progressbar_container').click(function(e) {
 	$('#playlist audio').get(index).currentTime = $('#playlist audio').get(index).duration*pos/100;  
 });
 
-/* MUTE */
-$('#vol_on').click(function() {
-	$('#vol_off').show();
-	$(this).hide();
-	vol_bak = vol;
-	vol = 0;
-	mute = true;
-});
-$('#vol_off').click(function() {
-	$('#vol_on').show();
-	$(this).hide();
-	vol=vol_bak;
-	mute = false;
-});
-/* VOLUME CONTROL */
-$('#vol_bar_container').click(function(e) {
-	var offset = $(this).offset(); 
-	pos = parseInt(100*(e.clientX - offset.left)/($('#vol_bar_container').width() ));
-	width = $('#vol_bar_container').attr('width');
-	$('#vol_bar').css({'width':pos+'%'});
-	if(mute){ vol_bak = pos/100; }
-	else {vol = pos/100 };
-});
-
 /* $(document).keypress(function(e) {
     if(e.which == 13) {
         alert("loaded "+parseInt(loaded)+"\nof "+parseInt(duration));

@@ -127,14 +127,12 @@ p, ol {
 
 a {
 	color: #fff;
-	font-weight: 700;
 }
 
 nav {
 	width: 320px;
 	margin: 20px auto;
 	padding: 0 20px;
-	font-weight: 700;
 	font-size: 1.1em;
 }
 
@@ -152,6 +150,7 @@ nav {
 			display: block;
 			text-align: center;
 			width: 92px;
+			font-weight: 400;
 			border-radius: 4px;
 			line-height: 30px;
 			padding:6px 0 4px 0;
@@ -238,6 +237,7 @@ nav {
 		background-color: ;
 		background-image: url(http://wintermix.kyledecker.me/2013/bg-top.jpg);
 	}
+
 		#y-2013 header { font-family: 'Playfair Display'; font-weight:900; font-style:italic; }
 
 /* 2012
@@ -248,6 +248,10 @@ nav {
 		background-color: #DBC5B2;
 		background-image: url(http://wintermix.kyledecker.me/2012/bg-top.jpg);
 	}
+
+		#y-2012 *::selection { background: #2a547d; }
+		#y-2012 *::-moz-selection { background: #2a547d; }
+
 		#y-2012 header { font-family: 'Oleo Script Swash Caps'; }
 		#y-2012 nav ul li.prev a,
 		#y-2012 nav ul li.next a { color: #6D6258; }
@@ -294,6 +298,10 @@ nav {
 		background-color: #383838;
 		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
 	}
+
+		#y-2010 *::selection { background: #FFF; }
+		#y-2010 *::-moz-selection { background: #FFF; }
+
 		#y-2010 header { font-family: 'Abril Fatface'; }
 		#y-2010 nav ul li.prev a,
 		#y-2010 nav ul li.next a { color: #383838; }
@@ -315,6 +323,10 @@ nav {
 		background-color: #a5b167;
 		background-image: url(http://wintermix.kyledecker.me/2009/bg-top.jpg);
 	}
+
+		#y-2009 *::selection { background: #d25788; }
+		#y-2009 *::-moz-selection { background: #d25788; }
+
 		#y-2009 header { font-family: 'Lemon'; }
 		#y-2009 nav ul li.prev a,
 		#y-2009 nav ul li.next a { color: #737B48; }
@@ -350,7 +362,6 @@ ol#tracklist {
         color: rgba(0,0,0,0.4);
         position: absolute;
         text-shadow: none;
-        font-weight: 700;
         display: block;
         text-align: right;
         width: 2em;

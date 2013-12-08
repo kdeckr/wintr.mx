@@ -11,7 +11,7 @@
     <title>Winter Mix <?php echo $year; ?></title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700|Oleo+Script+Swash+Caps|Playfair+Display:900italic|Abril+Fatface|Lemon|Quicksand:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400|Oleo+Script+Swash+Caps|Playfair+Display:900italic|Abril+Fatface|Lemon|Quicksand:300' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 </head>
 
