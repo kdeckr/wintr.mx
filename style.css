@@ -90,6 +90,19 @@ header {
 
 	header h1 {
 		font-size: 6em;
+		transition: 0.2s ease;
+	}
+
+	@media all and (max-width: 950px) and (min-width: 801px) {
+		header h1 { font-size: 5em; }
+	}
+
+	@media all and (max-width: 800px) and (min-width: 641px) {
+		header h1 { font-size: 4em; }
+	}
+
+	@media all and (max-width: 640px) {
+		header h1 { font-size: 3em; }
 	}
 
 #wrapper {
@@ -239,7 +252,7 @@ nav {
 		#y-2012 nav ul li.prev a,
 		#y-2012 nav ul li.next a { color: #6D6258; }
 
-		@media all and (max-width: 1024px) {
+		@media all and (max-width: 1024px) { /* Width of the background image, to shrink gracefully */
 			body#y-2012 {
 				-webkit-background-size: 1024px;
 				-moz-background-size: 1024px;
@@ -256,6 +269,10 @@ nav {
 		background-color: #37BCAF;
 		background-image: url(http://wintermix.kyledecker.me/2011/bg-top.jpg);
 	}
+
+		#y-2011 *::selection { background: #FF5F5F; }
+		#y-2011 *::-moz-selection { background: #FF5F5F; }
+
 		#y-2011 header { font-family: 'Quicksand'; font-weight:300; }
 		#y-2011 nav ul li.prev a,
 		#y-2011 nav ul li.next a { color: #19786F; }
@@ -271,13 +288,24 @@ nav {
 
 /* 2010
 /* Primary Color: #383838
-/* Secondary Color: # */
+/* Secondary Color: #383838 */
 
 	#y-2010 {
 		background-color: #383838;
 		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
 	}
 		#y-2010 header { font-family: 'Abril Fatface'; }
+		#y-2010 nav ul li.prev a,
+		#y-2010 nav ul li.next a { color: #383838; }
+
+		@media all and (max-width: 1384px) {
+			body#y-2010 {
+				-webkit-background-size: 1384px;
+				-moz-background-size: 1384px;
+				-o-background-size: 1384px;
+				background-size: 1384px;
+			}
+		}
 
 /* 2009
 /* Primary Color: #a5b167
@@ -449,6 +477,17 @@ a#download {
 	a#download:hover {
 		opacity:1;
 	}
+
+/* Make buttons, list numbers, etc. unselectable */
+
+a#download, .ctrl_btn, ol#tracklist li:before, nav {
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
   /************/
  /* Clearfix */
