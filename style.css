@@ -216,48 +216,63 @@ nav {
 	padding:2em;
 }
 
-  /*****************/
- /* Custom Designs */
-/*****************/
+  /***********************/
+ /* Custom Page Designs */
+/***********************/
 
-#y-2013 {
-	background-color: ;
-	background-image: url(http://wintermix.kyledecker.me/2013/bg-top.jpg);
-}
-	#y-2013 header {
-		font-family: 'Playfair Display'; font-weight:900; font-style:italic;
+/* 2013
+/* Primary Color: #DBC5B2
+/* Secondary Color: #6D6258 */
+
+	#y-2013 {
+		background-color: ;
+		background-image: url(http://wintermix.kyledecker.me/2013/bg-top.jpg);
 	}
-#y-2012 {
-	background-color: #DBC5B2;
-	background-image: url(http://wintermix.kyledecker.me/2012/bg-top.jpg);
-}
-	#y-2012 header {
-		font-family: 'Pacifico';
+		#y-2013 header { font-family: 'Playfair Display'; font-weight:900; font-style:italic; }
+
+/* 2012
+/* Primary Color: #DBC5B2
+/* Secondary Color: #6D6258 */
+
+	#y-2012 {
+		background-color: #DBC5B2;
+		background-image: url(http://wintermix.kyledecker.me/2012/bg-top.jpg);
 	}
-	#y-2012 nav a {
-		color: #574E46;
+		#y-2012 header { font-family: 'Oleo Script Swash Caps'; }
+		#y-2012 nav ul li.prev a,
+		#y-2012 nav ul li.next a { color: #6D6258; }
+
+/* 2011
+/* Primary Color: #37BCAF
+/* Secondary Color: #19786F */
+
+	#y-2011 {
+		background-color: #37BCAF;
+		background-image: url(http://wintermix.kyledecker.me/2011/bg-top.jpg);
 	}
-#y-2011 {
-	background-color: #37BCAF;
-	background-image: url(http://wintermix.kyledecker.me/2011/bg-top.jpg);
-}
-	#y-2011 header {
-		font-family: 'Lato'; font-weight:100;
+		#y-2011 header { font-family: 'Lato'; font-weight:100; }
+		#y-2011 nav ul li.prev a,
+		#y-2011 nav ul li.next a { color: #19786F; }
+
+/* 2010
+/* Primary Color: #
+/* Secondary Color: # */
+
+	#y-2010 {
+		background-color: #4A5E5F;
+		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
 	}
-#y-2010 {
-	background-color: #4A5E5F;
-	background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
-}
-	#y-2010 header {
-		font-family: 'Abril Fatface';
+		#y-2010 header { font-family: 'Abril Fatface'; }
+
+/* 2009
+/* Primary Color: #
+/* Secondary Color: # */
+
+	#y-2009 {
+		background-color: #4A5E5F;
+		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
 	}
-#y-2009 {
-	background-color: #4A5E5F;
-	background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
-}
-	#y-2009 header {
-		font-family: 'Allan'; font-weight:700;
-	}
+		#y-2009 header { font-family: 'Lemon'; }
 
 @media all and (max-width: 1024px) {
 	body#y-2012 {
