@@ -201,7 +201,7 @@ nav {
 		}
 
 	nav ul li a.disabled, nav ul li a.disabled:hover {
-		opacity: 0.15;
+		opacity: 0.3;
 		pointer-events: none;
 		cursor: default;
 	}
@@ -239,6 +239,15 @@ nav {
 		#y-2012 nav ul li.prev a,
 		#y-2012 nav ul li.next a { color: #6D6258; }
 
+		@media all and (max-width: 1024px) {
+			body#y-2012 {
+				-webkit-background-size: 1024px;
+				-moz-background-size: 1024px;
+				-o-background-size: 1024px;
+				background-size: 1024px;
+			}
+		}
+
 /* 2011
 /* Primary Color: #37BCAF
 /* Secondary Color: #19786F */
@@ -251,44 +260,45 @@ nav {
 		#y-2011 nav ul li.prev a,
 		#y-2011 nav ul li.next a { color: #19786F; }
 
+		@media all and (max-width: 1186px) {
+			body#y-2011 {
+				-webkit-background-size: 1186px;
+				-moz-background-size: 1186px;
+				-o-background-size: 1186px;
+				background-size: 1186px;
+			}
+		}
+
 /* 2010
-/* Primary Color: #
+/* Primary Color: #383838
 /* Secondary Color: # */
 
 	#y-2010 {
-		background-color: #4A5E5F;
+		background-color: #383838;
 		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
 	}
 		#y-2010 header { font-family: 'Abril Fatface'; }
 
 /* 2009
-/* Primary Color: #
-/* Secondary Color: # */
+/* Primary Color: #a5b167
+/* Secondary Color: #737B48 */
 
 	#y-2009 {
-		background-color: #4A5E5F;
-		background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
+		background-color: #a5b167;
+		background-image: url(http://wintermix.kyledecker.me/2009/bg-top.jpg);
 	}
 		#y-2009 header { font-family: 'Lemon'; }
+		#y-2009 nav ul li.prev a,
+		#y-2009 nav ul li.next a { color: #737B48; }
 
-@media all and (max-width: 1024px) {
-	body#y-2012 {
-		-webkit-background-size: 1024px;
-		-moz-background-size: 1024px;
-		-o-background-size: 1024px;
-		background-size: 1024px;
-	}
-}
-
-
-@media all and (max-width: 1186px) {
-	body#y-2011 {
-		-webkit-background-size: 1186px;
-		-moz-background-size: 1186px;
-		-o-background-size: 1186px;
-		background-size: 1186px;
-	}
-}
+		@media all and (max-width: 1500px) {
+			body#y-2009 {
+				-webkit-background-size: 1500px;
+				-moz-background-size: 1500px;
+				-o-background-size: 1500px;
+				background-size: 1500px;
+			}
+		}
 
   /*************/
  /* Tracklist */
