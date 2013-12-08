@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Winter Mix <?php echo $year; ?></title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700|Alfa+Slab+One|Berkshire+Swash|Playfair+Display:900italic|Pacifico|Allan:700|Abril+Fatface|Lemon|Lato:100' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 </head>
 

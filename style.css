@@ -68,16 +68,23 @@ body {
 	background: #222;
 	font-family: 'Nunito', 'Arial Rounded', Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.1);
 	color:#fff; /* Fallback */
-	color:rgba(255,255,255,0.8);
+	color:rgba(255,255,255,0.85);
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 header {
 	width: 100%;
 	text-align: center;
-	overflow: hidden;
 	margin-bottom: 6em; /* Same as #content margins */
+	color: #fff;
 }
 
 	header h1 {
@@ -105,7 +112,7 @@ p {
 }
 
 p, ol {
-	line-height: 1.5em;
+	line-height: 1.75em;
 }
 
 a {
@@ -118,7 +125,7 @@ nav {
 	margin: 20px auto;
 	padding: 0 20px;
 	font-weight: 700;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 	nav ul {
@@ -151,13 +158,15 @@ nav {
 			}
 
 	nav ul li.current a {
-		font-size: 1.3em;
+		font-size: 1.2em;
 		width: 96px;
 		opacity: 1;
+		color: #fff !important;
 	}
 
 	nav ul li.prev a, nav ul li.next a {
 		color: #333;
+		text-shadow: none;
 	}
 
 		nav ul li.prev a:hover, nav ul li.next a:hover {
@@ -195,7 +204,7 @@ nav {
 		}
 
 	nav ul li a.disabled, nav ul li a.disabled:hover {
-		opacity: 0.1;
+		opacity: 0.15;
 		pointer-events: none;
 		cursor: default;
 	}
@@ -208,24 +217,47 @@ nav {
 }
 
   /*****************/
- /* Custom Colors */
+ /* Custom Designs */
 /*****************/
 
-body#y-2012 {
-	background: #DBC5B2 url(http://wintermix.kyledecker.me/2012/bg-grad.jpg) no-repeat top center;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
+#y-2013 {
+	background-color: ;
+	background-image: url(http://wintermix.kyledecker.me/2013/bg-top.jpg);
 }
-
-body#y-2011 {
-	background: #37BCAF url(http://wintermix.kyledecker.me/2011/bg-grad.jpg) no-repeat top center;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
+	#y-2013 header {
+		font-family: 'Playfair Display'; font-weight:900; font-style:italic;
+	}
+#y-2012 {
+	background-color: #DBC5B2;
+	background-image: url(http://wintermix.kyledecker.me/2012/bg-top.jpg);
 }
+	#y-2012 header {
+		font-family: 'Pacifico';
+	}
+	#y-2012 nav a {
+		color: #574E46;
+	}
+#y-2011 {
+	background-color: #37BCAF;
+	background-image: url(http://wintermix.kyledecker.me/2011/bg-top.jpg);
+}
+	#y-2011 header {
+		font-family: 'Lato'; font-weight:100;
+	}
+#y-2010 {
+	background-color: #4A5E5F;
+	background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
+}
+	#y-2010 header {
+		font-family: 'Abril Fatface';
+	}
+#y-2009 {
+	background-color: #4A5E5F;
+	background-image: url(http://wintermix.kyledecker.me/2010/bg-top.jpg);
+}
+	#y-2009 header {
+		font-family: 'Allan'; font-weight:700;
+	}
 
 @media all and (max-width: 1024px) {
 	body#y-2012 {
@@ -265,8 +297,9 @@ ol#tracklist {
 	ol#tracklist li:before {
 		content: counter(item) " "; /* Numbers without periods */
         counter-increment: item;
-        color: rgba(0,0,0,0.3);
+        color: rgba(0,0,0,0.4);
         position: absolute;
+        text-shadow: none;
         font-weight: 700;
         display: block;
         text-align: right;
@@ -380,15 +413,16 @@ a#download {
 	border:4px solid #fff;
 	text-align: center;
 	padding:.8em 0;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.1);
 	border-radius:100px;
-	font-size:1.4em;
+	font-size:1.3em;
 	letter-spacing: 1px;
 	width:300px;
 	margin:10px auto;
-	transition: 0.3s cubic-bezier(.8,-1.5,.2,2);
-	-o-transition: 0.3s cubic-bezier(.8,-1,.2,2);
-	-moz-transition: 0.3s cubic-bezier(.8,-1,.2,2);
-	-webkit-transition: 0.3s cubic-bezier(.8,-1,.2,2);
+	transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
 }
 
 	a#download:hover {

@@ -97,7 +97,7 @@ $("audio").bind('timeupdate', function(){
 		secs = parseInt( eta - mins * 60);
 	}
 	// double digit
-	if(mins<10) mins = "0"+mins.toString();
+	if(mins<10) mins = mins.toString();
 	if(secs<10) secs = "0"+secs.toString();
 	var widthOfBufferBar = Math.floor( 100 / duration * loaded);
     var widthOfProgressBar = Math.floor( 100 / duration * position);
@@ -149,4 +149,3 @@ $('#vol_bar_container').click(function(e) {
 }); */
 
 });
-	
