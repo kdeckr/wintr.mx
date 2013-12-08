@@ -107,10 +107,6 @@ header {
 	margin: 6em 0;
 }
 
-p {
-	margin:.5em 0;
-}
-
 p, ol {
 	line-height: 1.75em;
 }
@@ -353,7 +349,7 @@ section#left, section#right {
 	height:10px;
 	border-radius:5px;
 	cursor:pointer;
-	margin-bottom: 10px;
+	margin: 1em auto;
 	background: rgba(0,0,0,0.7);
 	overflow:hidden;
 	position: relative;
@@ -418,7 +414,6 @@ section#left, section#right {
 #title{
 	font-size:1.4em;
 	color: #fff;
-	margin-bottom: 1em;
 	text-overflow: ellipsis;
 }
 a#download {

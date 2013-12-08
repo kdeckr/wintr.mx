@@ -17,7 +17,8 @@
 			?>
 		</div> <!-- /#playlist -->
 		<div id="display">
-			<div id="title" class="display_text">No Song Data Found</div>
+			<div id="title" class="display_text">Song Name</div>
+			<div id="artist" class="display_text">Artist Name</div>
 		</div> <!-- /#display -->
 		<div id	="progressbar_container"><div id="progressbar"></div></div>
 		<div id="timer" class="display_text">0:00</div>
