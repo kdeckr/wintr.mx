@@ -156,10 +156,10 @@ nav {
 			padding:6px 0 4px 0;
 			opacity: 0.8;
 			height: 40px;
-			transition: 0.3s cubic-bezier(.8,-1.5,.2,2);
-			-o-transition: 0.3s cubic-bezier(.8,-1,.2,2);
-			-moz-transition: 0.3s cubic-bezier(.8,-1,.2,2);
-			-webkit-transition: 0.3s cubic-bezier(.8,-1,.2,2);
+			transition: 0.4s cubic-bezier(.8,-2,.2,2.5);
+			-o-transition: 0.4s cubic-bezier(.8,-2,.2,2.5);
+			-moz-transition: 0.4s cubic-bezier(.8,-2,.2,2.5);
+			-webkit-transition: 0.4s cubic-bezier(.8,-2,.2,2.5);
 		}
 
 			nav ul li a:hover {
