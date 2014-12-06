@@ -13,6 +13,7 @@ Here are some things I'd like to eventually accomplish:
 - Implement progress bar for currently playing song, ala Tumblr
 - Generate zips from folders rather than storing duplicate audio
 - Popup to ask confirmation if someone tries to leave the page while music is playing
+- Play/pause status in page title
 - (Possibly) display a global interface for forward/back/track name, etc.
 - Add an about/history page
 
