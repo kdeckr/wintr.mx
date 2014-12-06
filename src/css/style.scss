@@ -16,12 +16,12 @@ html, body, ul, ol, li, p, form, fieldset, legend {
 	padding: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, footer, header, nav, section {
+// Display-role reset for older browsers
+article, footer, header, nav, section, main {
 	display: block;
 }
 
-/* Apply a natural box layout model to all elements */
+// Natural box model
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -67,7 +67,7 @@ h1, h2, h3, h4 {
 }
 
 // 
-// WELCOME
+// Welcome sidebar
 //
 
 .sidebar {
@@ -98,17 +98,8 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
-.colophon {
-	color: #a5b2b9;
-	a {
-		display: inline-block;
-		text-decoration: underline;
-		&:hover { color: #fff; }
-	}
-}
-
 // 
-// PLAYLISTS
+// Mix slides
 // 
 
 .content {
@@ -195,10 +186,10 @@ h1, h2, h3, h4 {
 }
 
 // 
-// PLAYLIST
+// Tracklists
 // 
 
-.playlist { font-size: 1.1em; }
+.tracklist { font-size: 1.1em; }
 
 .track-link {
 	color: #fff;
@@ -232,7 +223,7 @@ h1, h2, h3, h4 {
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
-	left: 12px;
+	left: 13px;
 	opacity: 0; // Hidden by default
 }
 
@@ -253,11 +244,13 @@ h1, h2, h3, h4 {
 }
 
 @keyframes happyMusic {
-	0% { background-position: center; }
-	35% { background-position: center 55%; }
-	60% { background-position: center 30%; }
-	75% { background-position: center 65%; }
-	85% { background-position: center 45%; }
+	10% { background-position: 50% 40%; }
+	25% { background-position: 50% 35%; }
+	40% { background-position: 50% 40%; }
+
+	60% { background-position: 50% 60%; }
+	75% { background-position: 50% 65%; }
+	90% { background-position: 50% 60%; }
 }
 
 .sm2_playing {
@@ -284,26 +277,23 @@ h1, h2, h3, h4 {
 	}
 }
 
-/***************
-*
-*  6. Media Queries
-*
-****************/
+//
+// Responsive goodness
+// 
 
-@media all and (max-width: 320px) {
-	body {
-		font-size: 15px;
+@media all and (max-width: 800px) {
+	body { font-size: 17px; }
+
+	.sidebar {
+		position: relative;
+		width: auto;
 	}
 
-	.wrapper {
-		padding:0 1em;
-	}
+	.content { margin-left: 0; }
+	.wrapper { padding: 0 1em; }
+	.about { padding: 0 1em; }
+}
 
-	.comments {
-		padding: 2em 0;
-	}
-
-	.about, .controls {
-		margin-top:2em;
-	}
+@media all and (max-width: 400px) {
+	body { font-size: 16px; }
 }
