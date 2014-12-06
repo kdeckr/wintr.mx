@@ -11,6 +11,7 @@ Here lie the innards of [wintermix.kyledecker.me](http://wintermix.kyledecker.me
 Here are some things I'd like to eventually accomplish:
 - Display titles, artists, etc. using ID3 tags rather than filenames
 - Implement progress bar for currently playing song, ala Tumblr
+- Generate zips from folders rather than storing duplicate audio
 - (Possibly) display a global interface for forward/back/track name, etc.
 - Add an about/history page
 
