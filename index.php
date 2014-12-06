@@ -19,7 +19,7 @@
 			<div class="about">
 				<p><i>Hi friends,</i></p>
 				<p>This site is home to 120 tunes I've put together over the past 6 years. They are explorations&mdash;evolutions in a yearly search for beautiful sounds of winter and its many celebrations.</p>
-				<p>The last title on this year's mix is <i>Lift Every Voice And Sing</i>, the black national anthem. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
+				<p>The last title on this year's mix is <i>Lift Every Voice and Sing</i>, the black national anthem. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
 				<p>Download, listen, <a href="https://www.facebook.com/kdeckr">let me know what you think</a>. And as always, please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy.</p>
 				<p><i>Happy winter,</i><br/>&mdash; Kyle</p>
 			</div>
