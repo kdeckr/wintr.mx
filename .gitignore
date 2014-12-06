@@ -1,7 +1,6 @@
 # Folders #
 ###########
-*/songs/
-*/songs/*
+/src/audio
 
 # OS generated files #
 ######################

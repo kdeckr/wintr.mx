@@ -1,0 +1,309 @@
+/******************************
+*
+*  Winter Mix Stylesheet 
+*
+*  Author: Kyle Decker
+*  Site: http://kyledecker.me
+* 
+******************************/
+
+// 
+// RESETS & BASIC STYLES
+// 
+
+html, body, ul, ol, li, p, form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, footer, header, nav, section {
+	display: block;
+}
+
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+	background: #444;
+	color: #fff; /* Fallback */
+	color: rgba(255,255,255,0.85);
+	font-weight: 300;
+	font-size: 18px;
+	font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: color linear .1s;
+	transition: color linear .1s;
+}
+
+ol, ul { list-style: none; }
+
+p {
+	line-height: 1.5;
+	margin-bottom: 0.8em;
+}
+
+ol {
+	line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.wrapper {
+	margin:0 auto;
+	max-width: 900px;
+	padding:0 2em;
+}
+
+// 
+// WELCOME
+//
+
+.sidebar {
+	background: #fff;
+	color: #5d6b73;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 450px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+	padding-bottom: 1em;
+	a {
+		color: #0066cc;
+		border-bottom: 1px solid transparent;
+		transition: border 0.2s ease;
+		&:hover { border-bottom-color: #cdd7dd; }
+	}
+}
+
+.title {
+	background: url(../img/pinecone.jpg) no-repeat bottom center;
+	font-size: 3em;
+	text-align: center;
+	font-style: italic;
+	padding: 1.1em 0 0.95em;
+	margin: 0;
+}
+
+.colophon {
+	color: #a5b2b9;
+	a {
+		display: inline-block;
+		text-decoration: underline;
+		&:hover { color: #fff; }
+	}
+}
+
+// 
+// PLAYLISTS
+// 
+
+.content {
+	overflow: auto;
+	width: auto;
+	margin-left: 450px;
+}
+
+.mix {
+	padding: 3.5em 0;
+	overflow:auto;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-transform: translate3D(0, 0, 0); // Force hardware acceleration to fix opacity transition flicker
+}
+
+.mix-header {
+	margin-bottom: 3.5em;
+	padding: 0 2em 0 2.75em;
+	a { color: #fff; }
+	.dot {
+		font-size: 1.5em;
+		margin: 0 0.6em;
+	}
+}
+
+.mix-download {
+	font-style: italic;
+	font-size: 1.3em;
+	border-bottom: 2px solid transparent;
+	transition: border 0.2s ease;
+	&:hover {
+		border-bottom-color: #fff;
+		border-bottom-color: rgba(255,255,255,0.7);
+	}
+}
+
+.mix-title {
+	position: relative;
+	margin: 0;
+	color: #fff;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+#y-2014 {
+	background-color: #73597e;
+	background-image: url(../img/bg-2014.jpg);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+#y-2013 {
+	background-color: #df766b;
+	background-image: url(../img/bg-2013.jpg);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+#y-2012 {
+	background-color: #DBC5B2;
+	background-image: url(../img/bg-2012.jpg);
+}
+
+#y-2011 {
+	background-color: #90a361;
+	background-image: url(../img/bg-2011.jpg); 
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+}
+
+#y-2010 {
+	background-color: #b34f3b;
+	background-image: url(../img/bg-2010.jpg);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.2);
+}
+
+#y-2009 {
+	background-color: #77b9d3;
+	background-image: url(../img/bg-2009.jpg);
+}
+
+// 
+// PLAYLIST
+// 
+
+.playlist { font-size: 1.1em; }
+
+.track-link {
+	color: #fff;
+	display: block;
+	padding: 0.3em;
+	border-radius: 5px;
+	display: block;
+	position: relative;
+}
+
+.track-number, .track-icon {
+	position: absolute;
+	width: 2em;
+	color: #fff;
+	color: rgba(0,0,0,0.55);
+	text-align: right;
+	transition: opacity 0.1s ease;
+	transition-delay: 0.25s;
+}
+
+.track-icon {
+	background-color: rgba(0,0,0,0.2);
+	background-image: url(../img/icon-play.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	font-size: 0.9em;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	left: 12px;
+	opacity: 0; // Hidden by default
+}
+
+.track:hover {
+	cursor: pointer;
+}
+
+.sm2_playing, .sm2_paused, .track:hover {
+	.track-icon { opacity: 1; }
+	.track-number { opacity: 0; }
+}
+
+.track-text { margin-left: 2.75em; }
+
+.track-artist {
+	font-size: 0.8em;
+	color: rgba(0,0,0,0.55);
+}
+
+@keyframes happyMusic {
+	0% { background-position: center; }
+	35% { background-position: center 55%; }
+	60% { background-position: center 30%; }
+	75% { background-position: center 65%; }
+	85% { background-position: center 45%; }
+}
+
+.sm2_playing {
+	background: rgba(255,255,255,0.4);
+	color: rgba(0,0,0,0.55);
+	.track-icon {
+		background-color: rgba(0,0,0,0.2);
+		background-image: url(../img/icon-playing.png);
+		animation: happyMusic 1s ease-in-out infinite;
+		&:hover {
+			background-image: url(../img/icon-pause.png);
+			animation: none;
+		}
+	}
+}
+
+.sm2_paused {
+	background: rgba(255,255,255,0.4);
+	color: rgba(0,0,0,0.55);
+	.track-icon {
+		background-color: rgba(0,0,0,0.2);
+		background-image: url(../img/icon-playing.png);
+		&:hover { background-image: url(../img/icon-play.png); }
+	}
+}
+
+/***************
+*
+*  6. Media Queries
+*
+****************/
+
+@media all and (max-width: 320px) {
+	body {
+		font-size: 15px;
+	}
+
+	.wrapper {
+		padding:0 1em;
+	}
+
+	.comments {
+		padding: 2em 0;
+	}
+
+	.about, .controls {
+		margin-top:2em;
+	}
+}
