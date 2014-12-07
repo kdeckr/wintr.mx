@@ -79,18 +79,21 @@ h1, h2, h3, h4 {
 	left: 0;
 	bottom: 0;
 	width: 450px;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+	box-shadow: 1px 0 0 0 rgba(0,0,0,0.15);
 	padding-bottom: 1em;
+	z-index: 5;
+	.wrapper {
+		background: url(../img/pinecone.jpg) no-repeat center 24px;
+	}
 	a {
 		color: #0066cc;
-		border-bottom: 1px solid transparent;
+		border-bottom: 1px solid #cdd7dd;
 		transition: border 0.2s ease;
-		&:hover { border-bottom-color: #cdd7dd; }
+		&:hover { border-bottom-color: #9eadb6; }
 	}
 }
 
 .title {
-	background: url(../img/pinecone.jpg) no-repeat bottom center;
 	font-size: 3em;
 	text-align: center;
 	font-style: italic;
@@ -242,13 +245,9 @@ h1, h2, h3, h4 {
 }
 
 @keyframes happyMusic {
-	10% { background-position: 50% 40%; }
-	25% { background-position: 50% 35%; }
-	40% { background-position: 50% 40%; }
-
-	60% { background-position: 50% 60%; }
-	75% { background-position: 50% 65%; }
-	90% { background-position: 50% 60%; }
+	0% { background-position: 50% 30%;  }
+	50% { background-position: 50% 70%; }
+	100% { background-position: 50% 30%; }
 }
 
 .sm2_playing {
@@ -257,7 +256,7 @@ h1, h2, h3, h4 {
 	.track-icon {
 		background-color: rgba(0,0,0,0.2);
 		background-image: url(../img/icon-playing.png);
-		animation: happyMusic 1s ease-in-out infinite;
+		animation: happyMusic 1.2s ease infinite;
 		&:hover {
 			background-image: url(../img/icon-pause.png);
 			animation: none;
