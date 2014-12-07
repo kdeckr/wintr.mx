@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="src/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic">
+	<script src="src/js/soundmanager2-nodebug-jsmin.js"></script>
+	<script src="src/js/inlineplayer.js"></script>
 </head>
 
 <body>
@@ -27,64 +29,61 @@
 	</header>
 	<main class="content">
 		<div class="mixes">
-		<?php
-			$year = 2014;
-			$i=0;
-			for($y=$year; $y>=2009; $y--): 
-		?>
-			<section <?= 'id="y-'.$y.'"'; ?> class="mix">
-				<div class="wrapper">
-					<div class="mix-header">
-						<h2 id="<?= $y; ?>" class="mix-title"><?= $y; ?></h2>
-						<span class="dot">&middot;</span>
-						<a href=<?= '/'.$y.'/songs/WinterMix'.$y.'.zip'; ?> class="mix-download">Download Mix</a>
-					</div>
-					<ol class="tracklist">
-						<?php
-							$dir = "src/audio/WinterMix".$y."/";
-							$n = 0;
-							foreach (glob($dir."*.mp3") as $filename) {
-								$filename_cut = substr ($filename, strlen($dir));
-								$noext = substr ($filename_cut, 0, -4);
-								$fileTit = substr ($noext, 3);
-								$array = explode(" - ", $fileTit);
-								$artist = $array[0];
-								$title = $array[1];
-
-								// Validate URLs
-								$search = array(" ", "&");
-								$replace = array("%20", "&amp;");
-								$validURL = $dir.str_replace($search, $replace, $filename_cut);
-
-								echo('<li class="track" id="track-'.$i++.'">
-										<a class="track-link" href="'.$validURL.'">
-											<span class="track-number">'.++$n.'</span>
-											<span class="track-icon"></span>
-											<div class="track-text">
-												<div class="track-title">'.$title.'</div>
-												<div class="track-artist">'.$artist.'</div>
-											</div>
-										</a>
-									</li>');
-							}
-						?>
-					</ol>
+		<?php $year = 2014; $i=0; ?>
+		<?php for($y=$year; $y>=2009; $y--): ?>	
+		<section id="y-<?php echo $y ?>" class="mix">
+			<div class="wrapper">
+				<div class="mix-header">
+					<h2 id="<?php echo $y ?>" class="mix-title"><?php echo $y ?></h2>
+					<span class="dot">&middot;</span>
+					<a href=<?php echo '/'.$y.'/songs/WinterMix$y.zip' ?> class="mix-download">Download Mix</a>
 				</div>
-			</section>
+				<ol class="tracklist">
+					<?php
+						$dir = "src/audio/WinterMix".$y."/";
+						$n = 0;
+						foreach (glob($dir."*.mp3") as $filename) {
+							$filename_cut = substr ($filename, strlen($dir));
+							$noext = substr ($filename_cut, 0, -4);
+							$fileTit = substr ($noext, 3);
+							$array = explode(" - ", $fileTit);
+							$artist = $array[0];
+							$title = $array[1];
+
+							// Validate URLs
+							$search = array(" ", "&");
+							$replace = array("%20", "&amp;");
+							$validURL = $dir.str_replace($search, $replace, $filename_cut);
+
+							echo('<li class="track" id="track-'.$i++.'">
+								<a class="track-link" href="'.$validURL.'">
+									<span class="track-number">'.++$n.'</span>
+									<span class="track-icon"></span>
+									<div class="track-text">
+										<div class="track-title">'.$title.'</div>
+										<div class="track-artist">'.$artist.'</div>
+									</div>
+								</a>
+							</li>');
+						}
+					?>
+				</ol>
+			</div>
+		</section>
 		<?php endfor; ?>
 		</div>
 	</main> <!-- /#content -->
-	<!-- Audio Player -->
-	<script src="src/js/soundmanager2-nodebug-jsmin.js"></script>
-	<script src="src/js/inlineplayer.js"></script>
-	<script type="text/javascript">
-		soundManager.setup({
-			url: 'src/swf/', // Path to swf files
-			defaultOptions: {
-				// set global default volume for all sound objects
-				volume: 100
-			}
-		});
-	</script>
 </body>
+
+<!-- Audio Player -->
+<script type="text/javascript">
+	soundManager.setup({
+		url: 'src/swf/', // Path to swf files
+		defaultOptions: {
+			// set global default volume for all sound objects
+			volume: 100
+		}
+	});
+</script>
+
 </html> 
