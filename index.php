@@ -10,8 +10,6 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="src/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic">
-	<script src="src/js/soundmanager2-nodebug-jsmin.js"></script>
-	<script src="src/js/inlineplayer.js"></script>
 </head>
 
 <body>
@@ -19,7 +17,7 @@
 		<div class="wrapper">
 			<h1 class="title">Winter Mix</h1>
 			<div class="about">
-				<p><i>Hey friends,</i></p>
+				<p>Hey friends,</p>
 				<p>Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound during a season of repetitive and unrelenting singsong.</p>
 				<p>The last title on this year's mix is the black national anthem, <i>Lift Every Voice and Sing</i>. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
 				<p>So this year, hug your friends, dance with strangers, kiss your loved ones. Lend a hand to someone who needs it. If you have time, <a href="https://www.facebook.com/kdeckr">share your thoughts</a> about this music. And as always, please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy.</p>
@@ -51,8 +49,8 @@
 							$title = $array[1];
 
 							// Validate URLs
-							$search = array(" ", "&");
-							$replace = array("%20", "&amp;");
+							$search = array(" ", "&", "ñ");
+							$replace = array("%20", "&amp;", "&ntilde;");
 							$validURL = $dir.str_replace($search, $replace, $filename_cut);
 
 							echo('<li class="track" id="track-'.$i++.'">
@@ -73,17 +71,18 @@
 		<?php endfor; ?>
 		</div>
 	</main> <!-- /#content -->
+
+	<!-- Audio Player -->
+	<script src="src/js/soundmanager2-nodebug-jsmin.js"></script>
+	<script src="src/js/inlineplayer.js"></script>
+	<script type="text/javascript">
+		soundManager.setup({
+			url: 'src/swf/', // Path to swf files
+			defaultOptions: {
+				// set global default volume for all sound objects
+				volume: 100
+			}
+		});
+	</script>
 </body>
-
-<!-- Audio Player -->
-<script type="text/javascript">
-	soundManager.setup({
-		url: 'src/swf/', // Path to swf files
-		defaultOptions: {
-			// set global default volume for all sound objects
-			volume: 100
-		}
-	});
-</script>
-
 </html> 

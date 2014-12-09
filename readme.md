@@ -1,5 +1,5 @@
-# Winter Mix
-Here lie the innards of [wintermix.kyledecker.me](http://wintermix.kyledecker.me), a small site for built sharing my yearly holiday mixes in the form of 20-song albums.
+# Wintr.mx
+[wintr.mx](http://wintr.mx) is a mini-site I built to share my yearly holiday mixes in the form of 20-song albums.
 
 ## Credits
 - Inline music handling is thanks to [SoundManager 2](http://www.schillmania.com/projects/soundmanager2/).
