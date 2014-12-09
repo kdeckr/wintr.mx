@@ -1,11 +1,16 @@
 # Wintr.mx
-[wintr.mx](http://wintr.mx) is a mini-site I built to share my yearly holiday mixes in the form of 20-song albums.
+> Hey friends,
+> Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound during a season of repetitive and unrelenting singsong.
+> The last title on this year's mix is the black national anthem, *Lift Every Voice and Sing*. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we [raise our voices as one](http://youtu.be/cwWhu8tw4nU).
+> So this year, hug your friends, dance with strangers, kiss your loved ones. Lend a hand to someone who needs it. If you have time, [share your thoughts](https://www.facebook.com/kdeckr) about this music. And as always, please [support](http://www.donationconspiracy.org) the artists that you enjoy.
+> — Kyle
 
 ## Credits
 - Inline music handling is thanks to [SoundManager 2](http://www.schillmania.com/projects/soundmanager2/).
 - The font used is [Vollkorn](http://vollkorn-typeface.com) by Friedrich Althausen, served using [Google Fonts](http://www.google.com/fonts).
 - Pinecone sketch drawn by [Ruth Harker](http://doodleaceae.blogspot.fr/2013/10/pine-cone.html).
 - Homegrown hosting via [A Small Orange](http://asmallorange.com).
+- CSS compiled with [SASS](http://sass-lang.com).
 
 ## To-Do
 Here are some things I'd like to eventually accomplish:
