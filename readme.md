@@ -1,8 +1,12 @@
 # Wintr.mx
 > Hey friends,
+
 > Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound during a season of repetitive and unrelenting singsong.
+
 > The last title on this year's mix is the black national anthem, *Lift Every Voice and Sing*. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we [raise our voices as one](http://youtu.be/cwWhu8tw4nU).
+
 > So this year, hug your friends, dance with strangers, kiss your loved ones. Lend a hand to someone who needs it. If you have time, [share your thoughts](https://www.facebook.com/kdeckr) about this music. And as always, please [support](http://www.donationconspiracy.org) the artists that you enjoy.
+
 > — Kyle
 
 ## Credits
