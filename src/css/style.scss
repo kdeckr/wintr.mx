@@ -78,7 +78,7 @@ h1, h2, h3, h4 {
 //
 
 .sidebar {
-	background: #fff url(../img/mailstripe.png) repeat-y left 20px;
+	background: #fff url(../img/mailstripe-v.png) repeat-y left center;
 	background-size: 20px 80px;
 	color: #5d6b73;
 	overflow: auto;
@@ -114,6 +114,8 @@ h1, h2, h3, h4 {
 }
 
 .about {
+	max-width: 500px;
+	margin: 0 auto;
 	padding-top: $spacing/2.5; // Same as .track-link
 }
 
@@ -305,11 +307,12 @@ h1, h2, h3, h4 {
 }
 
 @media all and (max-width: 800px) {
-	$spacing: 12px;
-
 	body { font-size: 16px; }
 
 	.sidebar {
+		background: #fff url(../img/mailstripe-h.png) repeat-x top center;
+		background-size: 80px 20px;
+		padding-left: $spacing*2;
 		position: relative;
 		width: auto;
 	}

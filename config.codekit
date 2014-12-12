@@ -202,6 +202,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/src\/img\/icon-playing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 293,
+		"inputAbbreviatedPath": "\/src\/img\/icon-playing.png",
+		"outputAbbreviatedPath": "\/src\/img\/icon-playing.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/src\/img\/mailstripe.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -231,17 +242,6 @@
 		"initialSize": 498,
 		"inputAbbreviatedPath": "\/src\/img\/squiggle.png",
 		"outputAbbreviatedPath": "\/src\/img\/squiggle.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/img\/winter.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 55468,
-		"inputAbbreviatedPath": "\/src\/img\/winter.jpg",
-		"outputAbbreviatedPath": "\/src\/img\/winter.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

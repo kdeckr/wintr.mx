@@ -4,7 +4,7 @@
 	<title>Winter Mix</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> 
-	<meta name="description" content="Tasteful tunes for the season." />
+	<meta name="description" content="Auditory wonders for the cold." />
 	<meta name="keywords" content="music, web design, compilation, christmas, winter, mix" />
 	<meta name="author" content="Kyle Decker" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -20,7 +20,7 @@
 				<p>Hi friends,</p>
 				<p>Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound for winter and its many celebrations.</p>
 				<p>The last title on this year's mix is the black national anthem, <i>Lift Every Voice and Sing</i>. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the feats possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
-				<p>Remember to hug, to dance, to sing, to love. If you have time, <a href="https://www.facebook.com/kdeckr">share your thoughts</a> about this project. And as always... please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy. <i>Happy winter.</i></p>
+				<p>So remember to hug, to dance, to sing, to love. If you have time, <a href="https://www.facebook.com/kdeckr">share your thoughts</a> about this project. And as always... please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy. <i>Happy winter.</i></p>
 				<p>Love, Kyle</p>
 			</div>
 		</div>
