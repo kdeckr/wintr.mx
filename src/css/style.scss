@@ -7,6 +7,13 @@
 * 
 ******************************/
 
+$spacing: 15px;
+
+%fix-fatty-fonts {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 // 
 // RESETS & BASIC STYLES
 // 
@@ -14,6 +21,7 @@
 html, body, ul, ol, li, p, form, fieldset, legend {
 	margin: 0;
 	padding: 0;
+	@extend %fix-fatty-fonts;
 }
 
 // Display-role reset for older browsers
@@ -57,13 +65,12 @@ ol {
 
 h1, h2, h3, h4 {
 	font-weight: 400;
-	margin-top: 0;
+	margin: 0;
 }
 
 .wrapper {
 	margin:0 auto;
 	max-width: 900px;
-	padding:0 2em;
 }
 
 // 
@@ -71,7 +78,8 @@ h1, h2, h3, h4 {
 //
 
 .sidebar {
-	background: #fff;
+	background: #fff url(../img/mailstripe.png) repeat-y left 20px;
+	background-size: 20px 80px;
 	color: #5d6b73;
 	overflow: auto;
 	position: fixed;
@@ -79,11 +87,12 @@ h1, h2, h3, h4 {
 	left: 0;
 	bottom: 0;
 	width: 450px;
-	box-shadow: 1px 0 0 0 rgba(0,0,0,0.15);
-	padding-bottom: 1em;
+	box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);
+	padding: $spacing*2;
+	padding-left: $spacing*2+20px;
 	z-index: 5;
 	.wrapper {
-		background: url(../img/pinecone.jpg) no-repeat center 24px;
+	//	background: url(../img/pinecone.jpg) no-repeat center 24px;
 	}
 	a {
 		color: #0066cc;
@@ -94,11 +103,18 @@ h1, h2, h3, h4 {
 }
 
 .title {
-	font-size: 3em;
+	background: url(../img/squiggle.png) no-repeat bottom center;
+	background-size: 180px 15px;
+	font-size: 2em; // Same size as mix-title
 	text-align: center;
-	font-style: italic;
-	padding: 1.1em 0 0.95em;
-	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: $spacing*2 0;
+	margin-bottom: $spacing;
+}
+
+.about {
+	padding-top: $spacing/2.5; // Same as .track-link
 }
 
 // 
@@ -112,7 +128,7 @@ h1, h2, h3, h4 {
 }
 
 .mix {
-	padding: 3.5em 0;
+	padding: $spacing*2;
 	overflow:auto;
 	-webkit-background-size: 100% auto;
 	-moz-background-size: 100% auto;
@@ -124,23 +140,12 @@ h1, h2, h3, h4 {
 }
 
 .mix-header {
-	margin-bottom: 3.5em;
-	padding: 0 2em 0 2.75em;
+	margin: $spacing*2 0 $spacing*3;
+	margin-left: $spacing*3.5; // Always match margin-left of .track-text
 	a { color: #fff; }
 	.dot {
 		font-size: 1.5em;
 		margin: 0 0.6em;
-	}
-}
-
-.mix-download {
-	font-style: italic;
-	font-size: 1.3em;
-	border-bottom: 2px solid transparent;
-	transition: border 0.2s ease;
-	&:hover {
-		border-bottom-color: #fff;
-		border-bottom-color: rgba(255,255,255,0.7);
 	}
 }
 
@@ -154,16 +159,27 @@ h1, h2, h3, h4 {
 	display: inline-block;
 }
 
+.mix-download {
+	font-style: italic;
+	font-size: 1.3em;
+	border-bottom: 2px solid transparent;
+	transition: border 0.2s ease;
+	&:hover {
+		border-bottom-color: #fff;
+		border-bottom-color: rgba(255,255,255,0.7);
+	}
+}
+
 #y-2014 {
 	background-color: #73597e;
 	background-image: url(../img/bg-2014.jpg);
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
 }
 
 #y-2013 {
 	background-color: #df766b;
 	background-image: url(../img/bg-2013.jpg);
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
 }
 
 #y-2012 {
@@ -174,13 +190,13 @@ h1, h2, h3, h4 {
 #y-2011 {
 	background-color: #90a361;
 	background-image: url(../img/bg-2011.jpg); 
-	box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
 }
 
 #y-2010 {
 	background-color: #b34f3b;
 	background-image: url(../img/bg-2010.jpg);
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1), inset 0 1px 0 rgba(0,0,0,0.1);
 }
 
 #y-2009 {
@@ -192,12 +208,15 @@ h1, h2, h3, h4 {
 // Tracklists
 // 
 
-.tracklist { font-size: 1.1em; }
+.tracklist {
+	font-size: 1.1em;
+	margin-bottom: $spacing*2;
+}
 
 .track-link {
 	color: #fff;
 	display: block;
-	padding: 0.3em;
+	padding: $spacing/2.5;
 	border-radius: 5px;
 	display: block;
 	position: relative;
@@ -205,7 +224,7 @@ h1, h2, h3, h4 {
 
 .track-number, .track-icon {
 	position: absolute;
-	width: 2em;
+	width: $spacing*2.5;
 	color: #fff;
 	color: rgba(0,0,0,0.55);
 	text-align: right;
@@ -217,14 +236,14 @@ h1, h2, h3, h4 {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 2px;
-	width: 32px;
-	height: 32px;
+	width: 34px;
+	height: 34px;
 	color: #fff;
 	font-size: 0.9em;
 	position: absolute;
 	top: 50%;
-	margin-top: -16px;
-	left: 13px;
+	margin-top: -17px;
+	left: 12px;
 	opacity: 0; // Hidden by default
 }
 
@@ -237,7 +256,7 @@ h1, h2, h3, h4 {
 	.track-number { opacity: 0; }
 }
 
-.track-text { margin-left: 2.75em; }
+.track-text { margin-left: $spacing*3.5; }
 
 .track-artist {
 	font-size: 0.8em;
@@ -279,12 +298,15 @@ h1, h2, h3, h4 {
 // 
 
 @media all and (max-width: 960px) {
+	body { font-size: 17px; }
 	.sidebar { width: 360px; }
 	.content { margin-left: 360px; }
 }
 
 @media all and (max-width: 800px) {
-	body { font-size: 17px; }
+	$spacing: 12px;
+
+	body { font-size: 16px; }
 
 	.sidebar {
 		position: relative;
@@ -292,10 +314,8 @@ h1, h2, h3, h4 {
 	}
 
 	.content { margin-left: 0; }
-	.wrapper { padding: 0 1em; }
-	.about { padding: 0 1em; }
 }
 
 @media all and (max-width: 400px) {
-	body { font-size: 16px; }
+	body { font-size: 15px; }
 }

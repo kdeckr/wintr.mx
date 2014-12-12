@@ -15,13 +15,13 @@
 <body>
 	<header class="sidebar">
 		<div class="wrapper">
-			<h1 class="title">Winter Mix</h1>
+			<h1 class="title">Wintr.mx</h1>
 			<div class="about">
-				<p>Hey friends,</p>
-				<p>Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound during a season marked by repetition and familiarity.</p>
-				<p>The last title on this year's mix is the black national anthem, <i>Lift Every Voice and Sing</i>. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the amazing things possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
-				<p>So this year, hug your friends, dance with strangers, kiss your loved ones. Lend a hand to someone who needs it. If you have time, <a href="https://www.facebook.com/kdeckr">share your thoughts</a> about this music. And as always, please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy.</p>
-				<p>&mdash; Kyle</p>
+				<p>Hi friends,</p>
+				<p>Here you'll find 120 tunes that I've put together over the past 6 years. They're my attempts to find new expressions of sound for winter and its many celebrations.</p>
+				<p>The last title on this year's mix is the black national anthem, <i>Lift Every Voice and Sing</i>. It’s a tribute to the countless lives lost to racism and injustice, and a reminder of the feats possible when we <a href="http://youtu.be/cwWhu8tw4nU">raise our voices as one</a>.</p>
+				<p>Remember to hug, to dance, to sing, to love. If you have time, <a href="https://www.facebook.com/kdeckr">share your thoughts</a> about this project. And as always... please <a href="http://www.donationconspiracy.org">support</a> the artists that you enjoy. <i>Happy winter.</i></p>
+				<p>Love, Kyle</p>
 			</div>
 		</div>
 	</header>
@@ -34,13 +34,13 @@
 				<div class="mix-header">
 					<h2 id="<?php echo $y ?>" class="mix-title"><?php echo $y ?></h2>
 					<span class="dot">&middot;</span>
-					<a href=<?php echo 'src/audio/WinterMix'.$y.'.zip' ?> class="mix-download">Download Mix</a>
+					<a href="/src/audio/WinterMix<?php echo $y ?>.zip" class="mix-download">Download Mix</a>
 				</div>
 				<ol class="tracklist">
 					<?php
-						$dir = "src/audio/WinterMix".$y."/";
+						$dir = 'src/audio/WinterMix'.$y.'/';
 						$n = 0;
-						foreach (glob($dir."*.mp3") as $filename) {
+						foreach (glob($dir.'*.mp3') as $filename) {
 							$filename_cut = substr ($filename, strlen($dir));
 							$noext = substr ($filename_cut, 0, -4);
 							$fileTit = substr ($noext, 3);
@@ -49,8 +49,8 @@
 							$title = $array[1];
 
 							// Validate URLs
-							$search = array(" ", "&", "ñ");
-							$replace = array("%20", "&amp;", "&ntilde;");
+							$search = array(" ", "&");
+							$replace = array("%20", "&amp;");
 							$validURL = $dir.str_replace($search, $replace, $filename_cut);
 
 							echo('<li class="track" id="track-'.$i++.'">
@@ -70,9 +70,8 @@
 		</section>
 		<?php endfor; ?>
 		</div>
-	</main> <!-- /#content -->
+	</main>
 
-	<!-- Audio Player -->
 	<script src="src/js/soundmanager2-nodebug-jsmin.js"></script>
 	<script src="src/js/inlineplayer.js"></script>
 	<script type="text/javascript">

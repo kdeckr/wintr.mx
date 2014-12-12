@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/readme.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/readme.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/readme.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -222,6 +213,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/src\/img\/mailstripe.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2013,
+		"inputAbbreviatedPath": "\/src\/img\/mailstripe.png",
+		"outputAbbreviatedPath": "\/src\/img\/mailstripe.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/src\/img\/pinecone.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -229,6 +231,28 @@
 		"initialSize": 9906,
 		"inputAbbreviatedPath": "\/src\/img\/pinecone.jpg",
 		"outputAbbreviatedPath": "\/src\/img\/pinecone.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/src\/img\/squiggle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 977,
+		"inputAbbreviatedPath": "\/src\/img\/squiggle.png",
+		"outputAbbreviatedPath": "\/src\/img\/squiggle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/src\/img\/winter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55468,
+		"inputAbbreviatedPath": "\/src\/img\/winter.jpg",
+		"outputAbbreviatedPath": "\/src\/img\/winter.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
