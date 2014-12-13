@@ -68,10 +68,7 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
-.wrapper {
-	margin:0 auto;
-	max-width: 500px;
-}
+.wrapper { margin:0 auto; }
 
 // 
 // Welcome sidebar
@@ -134,7 +131,6 @@ h1, h2, h3, h4 {
 	background-repeat: no-repeat;
 	background-position: center top;
 	-webkit-transform: translate3D(0, 0, 0); // Force hardware acceleration to fix opacity transition flicker
-	.wrapper { max-width: 605px; }
 }
 
 .mix-header {
@@ -304,6 +300,7 @@ h1, h2, h3, h4 {
 
 @media all and (max-width: 800px) {
 	body { font-size: 16px; }
+	.wrapper { max-width: 500px; }
 
 	.sidebar {
 		background: #fff url(../img/mailstripe-h.png) repeat-x top center;
@@ -313,7 +310,10 @@ h1, h2, h3, h4 {
 		width: auto;
 	}
 
-	.mix { padding: $spacing; }
+	.mix {
+		padding: $spacing;
+		.wrapper { max-width: 605px; }
+	}
 
 	.content { margin-left: 0; }
 }
