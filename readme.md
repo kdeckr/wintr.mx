@@ -20,7 +20,7 @@
 Here are some things I'd like to eventually accomplish:
 - Display titles, artists, etc. using ID3 tags rather than filenames
 - Implement progress bar for currently playing song, ala Tumblr
-- Generate zips from folders rather than storing duplicate audio
+- ~~Generate zips from folders rather than storing duplicate audio~~ Too resource-heavy; easier to just store dupes
 - Popup to ask confirmation if someone tries to leave the page while music is playing
 - Play/pause status in page title
 - (Possibly) display a global interface for forward/back/track name, etc.
