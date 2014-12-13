@@ -134,7 +134,7 @@ h1, h2, h3, h4 {
 }
 
 .mix-header {
-	margin: $spacing*2 0 $spacing*3 $spacing*3.5; // Always match margin-left of .track-text
+	margin: $spacing*2 0 $spacing*3 $spacing*3.8;
 	a { color: #fff; }
 	.dot {
 		font-size: 1.5em;
@@ -313,8 +313,6 @@ h1, h2, h3, h4 {
 		padding: $spacing;
 		.wrapper { max-width: 605px; }
 	}
-
-	.mix-header { margin-left: $spacing*3.8; }
 
 	.content { margin-left: 0; }
 }
