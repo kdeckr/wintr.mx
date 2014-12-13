@@ -134,8 +134,7 @@ h1, h2, h3, h4 {
 }
 
 .mix-header {
-	margin: $spacing*2 0 $spacing*3;
-	margin-left: $spacing*3.5; // Always match margin-left of .track-text
+	margin: $spacing*2 0 $spacing*3 $spacing*3.5; // Always match margin-left of .track-text
 	a { color: #fff; }
 	.dot {
 		font-size: 1.5em;
@@ -315,10 +314,12 @@ h1, h2, h3, h4 {
 		.wrapper { max-width: 605px; }
 	}
 
+	.mix-header { margin-left: $spacing*3.8; }
+
 	.content { margin-left: 0; }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 440px) {
 	body { font-size: 15px; }
 	.mix { padding: $spacing 0 $spacing/2 0; }
 	.track-link { border-radius: 0; }	
