@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<?php include_once("analytics.php") ?>
 	<header class="sidebar">
 		<div class="wrapper">
 			<h1 class="title">Wintr.mx</h1>
